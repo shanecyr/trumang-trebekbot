@@ -67,6 +67,8 @@ post "/" do
       response = respond_with_loserboard
     elsif params[:text].match(/^leaders$/i)
       response = respond_with_leaderboard
+    elsif params[:text].match(/^scores$/i)
+      response = respond_with_leaderboard
     else
       response = process_answer(params)
     end
