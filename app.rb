@@ -441,7 +441,7 @@ end
 def respond_with_help
   reply = <<help
 Type `tk go` to start a new round of Slack Jeopardy. I will pick the category and price. Anyone in the channel can respond.
-Type `tk [what|where|who] [is|are] [answer]?` to respond to the active round. You have #{ENV["SECONDS_TO_ANSWER"]} seconds to answer. Remember, responses must be in the form of a question, e.g. `#{ENV["BOT_USERNAME"]} what is dirt?`.
+Type `tk [what|where|who] [is|are] [answer]?` to respond to the active round. You have #{ENV["SECONDS_TO_ANSWER"]} seconds to answer. Remember, responses must be in the form of a question, e.g. `tk what is dirt?`.
 Type `tk score` to see your current score.
 Type `tk leaders` to see the top scores.
 Type `tk losers` to see the bottom scores.
